@@ -1,0 +1,153 @@
+/* src/Pages/HomeStyle.css */
+
+.home-section {
+  padding: 50px 20px;
+  background: #f8f9fa;
+}
+
+/* Heading */
+.home-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-heading h1 {
+  font-size: 38px;
+  color: #0b5d2a;
+  margin-bottom: 10px;
+}
+
+.home-heading p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Main Grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.home-card {
+  background: #fff;
+  padding: 25px;
+  border-top: 5px solid #0b5d2a;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.home-card h2 {
+  font-size: 22px;
+  color: #0b5d2a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ================================= */
+/* COLUMN 1 : LANGUAGE SECTION       */
+/* ================================= */
+
+.language-grid {
+  display: grid;
+  grid-template-columns: 1fr;   /* single row item */
+  gap: 18px;
+}
+
+.language-card {
+  text-align: center;
+}
+
+.language-card img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+.language-card img:hover {
+  transform: scale(1.03);
+}
+
+.language-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #0b5d2a, #198754);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.language-button:hover {
+  background: linear-gradient(45deg, #198754, #0b5d2a);
+}
+
+/* ================================= */
+/* OTHER COLUMN IMAGES               */
+/* ================================= */
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr;   /* one item each row */
+  gap: 15px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;          /* auto height */
+  border-radius: 10px;
+  object-fit: contain;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Bank Box */
+.bank-box {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.bank-box p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-heading h1 {
+    font-size: 28px;
+  }
+
+  .home-heading p {
+    font-size: 16px;
+  }
+
+  .home-card {
+    padding: 20px;
+  }
+}

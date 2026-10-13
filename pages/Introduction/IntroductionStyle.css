@@ -1,0 +1,21 @@
+.introduction-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-card {
+  max-width: 800px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.intro-card h1 {
+  margin-bottom: 12px;
+}
+
+.intro-card p {
+  line-height: 1.6;
+}
