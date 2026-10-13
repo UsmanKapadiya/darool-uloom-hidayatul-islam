@@ -1,0 +1,118 @@
+/* src/Pages/ContactStyle.css */
+
+.contact-section {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.contact-header h1 {
+  font-size: 40px;
+  color: #0b5d2a;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-card {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-top: 5px solid #0b5d2a;
+}
+
+.contact-card h2 {
+  color: #0b5d2a;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.contact-item span {
+  font-size: 22px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.hours-box {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.hours-box p {
+  margin: 12px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.contact-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #0b5d2a, #198754);
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(45deg, #198754, #0b5d2a);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .contact-header h1 {
+    font-size: 30px;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+
+  .contact-card h2 {
+    font-size: 24px;
+  }
+}
